@@ -7,7 +7,7 @@ Construcción e implementación de codificación de cuatro patrones de programac
 
 ### Estructura del Repositorio
 
-- `patronesDiseño`: Conjunto de patrones de programación implementados como ejemplos, especifica el patrón factory, facade y decorator
+- `patterns`: Conjunto de patrones de programación implementados como ejemplos, especifica el patrón factory, facade y decorator
 - `Strategy`: Patrón implementado Strategy
 
 
