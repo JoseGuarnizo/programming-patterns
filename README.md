@@ -3,7 +3,6 @@ Construcción e implementación de codificación de cuatro patrones de programac
 
 - `Strategy` - "Patrón de comportamiento porque determina cómo se debe realizar el intercambio de mensajes entre diferentes objetos para resolver una tarea"
 - `Factory` - "Permite la creación de un subtipo determinado por medio de una clase Factoría, lo cual oculta los detalles de creación del objeto"
-- `Facade` - "Necesidad de estructurar un entorno de programación para reducir la complejidad"
 - `Decorator` - "Añade dinámicamente funcionalidad a un objeto"
 
 ### Estructura del Repositorio
