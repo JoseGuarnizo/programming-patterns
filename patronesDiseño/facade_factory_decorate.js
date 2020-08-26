@@ -84,43 +84,7 @@ class thanos extends enemigo {
     }
 }
 
-//clase sola para despues utilizar con patron FACADE
-class puntajeNuevo {
-    puntaje_wario() {
-        return 1000 + ' puntos de aniquilación'
-    }
-    puntaje_thanos() {
-        return 2000 + ' puntos de aniquilación'
-    }
-    puntaje_pacman() {
-        return 100 + ' puntos de aniquilación'
-    }
-}
-
 //Aplicaciones de todos los patrones estructurales y creacionales
-
-//Declaracion de patron FACADE en una clase
-//Busca simplificar desde el punto de vista del usuario
-class facade {
-    constructor(villano) {
-
-        switch (villano) {
-            case 'wario':
-                const puntajeW = new puntajeNuevo();
-                return puntajeW
-            case 'pacman':
-                const puntajeP = new puntajeNuevo();
-                return puntajeP
-            case 'thanos':
-                const puntajeT = new puntajeNuevo();
-                return puntajeT
-            default:
-                return null;
-        }
-    }
-
-}
-
 
 //Declaración de patrón creacional FACTORY en una clase
 //Permitir realizar muchos cambios en este caso nuevas instancias
@@ -170,20 +134,7 @@ class enemyDecorator {
 
 }
 
-
-//--------------------------------------------------------
-
-//Resultado patron estructural FACADE y ejecución
-const warioValue = new facade('wario');
-const pacmanValue = new facade('thanos');
-const thanosValue = new facade('pacman');
-
-console.log(warioValue.puntaje_wario() + ' por wario',
-            pacmanValue.puntaje_pacman() + ' por pacman',
-            thanosValue.puntaje_thanos() + ' por thanos');
-console.log()
-
-//Resultado patron DECORADOR y ejecución
+//Resultado patron DECORADOR
 console.log('Aplicación con Patron estructural Decorator:')
 console.log()
 const warioSay = new entidadFactory('wario');
